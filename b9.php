@@ -123,7 +123,7 @@
         </thead>
         <tbody>
             <?php 
-            $con = mysqli_connect('localhost','root','goodluck','notes');
+            $con = mysqli_connect('mysql.railway.internal', 'root', 'GJifTuTKslzyFAUQochWGXciqLxvOpEU', 'railway');
             if (!$con) {
                 echo "<tr><td colspan='5'>Connection failed: " . mysqli_connect_error() . "</td></tr>";
             } else {

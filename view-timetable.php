@@ -159,7 +159,7 @@
 
 <?php
 if (isset($_POST['submit'])) {
-    $con = mysqli_connect('localhost', 'root', 'goodluck', 'notes');
+    $con = mysqli_connect('mysql.railway.internal', 'root', 'GJifTuTKslzyFAUQochWGXciqLxvOpEU', 'railway');
     if (!$con) {
         echo "<p style='color:red;'>Connection failed: " . mysqli_connect_error() . "</p>";
         exit;

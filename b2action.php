@@ -1,7 +1,7 @@
 <?php
 $a = $_GET['t1'];
 $b = $_GET['t2'];
-$con = mysqli_connect('localhost','root','goodluck','notes');
+$con = mysqli_connect('mysql.railway.internal', 'root', 'GJifTuTKslzyFAUQochWGXciqLxvOpEU', 'railway');
 $q = "select * from teacherinfo where name='$a' and id ='$b'";
 $res = mysqli_query($con,$q);
 if($row = mysqli_fetch_array($res)){

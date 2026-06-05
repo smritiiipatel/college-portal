@@ -125,7 +125,7 @@
         </form>
         <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
-            $con = new mysqli("localhost", "root", "goodluck", "notes");
+            $con = new mysqli('mysql.railway.internal', 'root', 'GJifTuTKslzyFAUQochWGXciqLxvOpEU', 'railway');
             if ($con->connect_error) {
                 echo "<div style='color:red;margin-top:10px;'>Database Connection Failed</div>";
                 exit();

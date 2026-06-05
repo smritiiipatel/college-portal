@@ -134,7 +134,7 @@
 
     <ul>
         <?php
-        $con = mysqli_connect('localhost', 'root', 'goodluck', 'notes');
+        $con = mysqli_connect('mysql.railway.internal', 'root', 'GJifTuTKslzyFAUQochWGXciqLxvOpEU', 'railway');
         if (!$con) {
             echo "<li>Connection failed: " . mysqli_connect_error() . "</li>";
             exit;

@@ -7,7 +7,7 @@ $fon =$_FILES['f1']['name'];
 $tn =$_FILES['f1']['tmp_name'];
 if(move_uploaded_file($tn,$fon))
 {
-$con=mysqli_connect('localhost','root','goodluck','notes');
+$con=mysqli_connect('mysql.railway.internal', 'root', 'GJifTuTKslzyFAUQochWGXciqLxvOpEU', 'railway');
 
 	$q="insert into form values('$r','$m','$n','$p','$fon')";
 	echo "Uploaded";
